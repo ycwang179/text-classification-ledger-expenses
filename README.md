@@ -2,7 +2,7 @@
 
 This project demonstrates a reproducible Python text classification workflow for labeling noisy financial ledger descriptions as either **Personnel** or **Non-Personnel** expenses.
 
-The goal is to show an end-to-end machine learning workflow, including text preprocessing, abbreviation normalization, train/test validation, TF-IDF vectorization, baseline model training, evaluation, and a conceptual data mutation diagram.
+The goal is to present an end-to-end machine learning workflow, including text preprocessing, abbreviation normalization, train/test validation, TF-IDF vectorization, baseline model training, evaluation, and a conceptual data mutation diagram.
 
 ## Project Overview
 
@@ -35,19 +35,19 @@ text-classification-ledger-expenses/
 │   └── text_classification_pipeline.ipynb
 │
 └── outputs/
-    └── data_mutation_layout.png
+    └── data_mutation_layout.pdf
 ```
 
 ## Data
 
-The sample data included in this repository are synthetic examples created for demonstration purposes. No proprietary or employer-provided dataset is included.
+The sample data included in this repository are synthetic examples created for demonstration purposes. No proprietary, confidential, or employer-provided dataset is included.
 
 The dataset contains two columns:
 
 * `raw_text`: noisy or abbreviated financial ledger description
 * `category`: target label, either `Personnel` or `Non-Personnel`
 
-Example records may include abbreviated descriptions such as teacher salary, office supplies, substitute teacher costs, utility bills, repairs, or other school district operating expenses.
+Example records may include abbreviated descriptions related to teacher salary, office supplies, substitute teacher costs, utility bills, repairs, and other school district operating expenses.
 
 ## Methods
 
@@ -94,6 +94,15 @@ jupyter notebook notebooks/text_classification_pipeline.ipynb
 
 Run the notebook from top to bottom.
 
+## Outputs
+
+This repository includes a supporting output file:
+
+* `outputs/data_mutation_layout.pdf`
+  A conceptual workflow diagram showing how raw ledger text is transformed through preprocessing, tokenization, vectorization, model prediction, confidence review, and final categorization logic.
+
+This output is included to complement the code and help readers quickly understand the end-to-end data transformation and modeling workflow.
+
 ## Code Sample Highlights
 
 Recommended files to review:
@@ -102,17 +111,24 @@ Recommended files to review:
    End-to-end text classification workflow, including preprocessing, model training, and evaluation.
 
 2. `data/sample_ledger_expenses.csv`
-   Synthetic example data used for demonstration.
+   Synthetic example data used for demonstration purposes.
 
-3. `outputs/data_mutation_layout.png`
+3. `outputs/data_mutation_layout.pdf`
    Conceptual diagram showing how raw text is transformed through preprocessing, tokenization, vectorization, model prediction, and human review logic.
 
 ## Notes on Data Leakage Prevention
 
 The train/test split is performed before model fitting. The TF-IDF vectorizer is fit only on the training data and then applied to the test data through a scikit-learn pipeline. This helps prevent information from the test set from leaking into the model training process.
 
+## Notes
+
+This repository is intended as a portfolio-style project to demonstrate practical skills in text classification, data preprocessing, and reproducible machine learning workflow development.
+
+The dataset is synthetic and included only for demonstration. The project focuses on workflow clarity, baseline modeling, and transparent communication of the transformation process.
+
 ## Author
 
-Yu-Chun Wang
+**Yu-Chun Wang**
 Ph.D. Candidate in Statistics
 George Mason University
+LinkedIn: https://www.linkedin.com/in/ycwang179/
