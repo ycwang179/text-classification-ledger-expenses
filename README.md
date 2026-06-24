@@ -131,4 +131,3 @@ The dataset is synthetic and included only for demonstration. The project focuse
 **Yu-Chun Wang**
 Ph.D. Candidate in Statistics
 George Mason University
-LinkedIn: https://www.linkedin.com/in/ycwang179/
