@@ -143,6 +143,6 @@ The dataset is synthetic and included only for demonstration. The project focuse
 
 ## Author
 
-**Yu-Chun Wang**
+**Yu-Chun Wang**,
 Ph.D. Candidate in Statistics,
 George Mason University
