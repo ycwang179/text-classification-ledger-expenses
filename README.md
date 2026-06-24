@@ -35,6 +35,7 @@ text-classification-ledger-expenses/
 │   └── text_classification_pipeline.ipynb
 │
 └── outputs/
+    ├── data_mutation_layout.png
     └── data_mutation_layout.pdf
 ```
 
@@ -61,6 +62,14 @@ The project uses a simple and interpretable machine learning pipeline:
 * Classification report with precision, recall, and F1-score
 
 The pipeline is intentionally simple and reproducible. The emphasis is on software engineering hygiene, data transformation logic, model validity, and clear communication of the workflow.
+
+## Data Mutation Layout
+
+The diagram below illustrates how a raw ledger description is transformed through the machine learning pipeline, including preprocessing, tokenization, TF-IDF vectorization, model prediction, confidence review, and final categorization.
+
+![Data mutation layout](outputs/data_mutation_layout.png)
+
+A PDF version is also available here: [`outputs/data_mutation_layout.pdf`](outputs/data_mutation_layout.pdf)
 
 ## Key Skills Demonstrated
 
@@ -96,12 +105,15 @@ Run the notebook from top to bottom.
 
 ## Outputs
 
-This repository includes a supporting output file:
+This repository includes supporting output files:
+
+* `outputs/data_mutation_layout.png`
+  Image version of the conceptual workflow diagram, displayed directly in this README.
 
 * `outputs/data_mutation_layout.pdf`
-  A conceptual workflow diagram showing how raw ledger text is transformed through preprocessing, tokenization, vectorization, model prediction, confidence review, and final categorization logic.
+  PDF version of the same workflow diagram for easier downloading, sharing, or printing.
 
-This output is included to complement the code and help readers quickly understand the end-to-end data transformation and modeling workflow.
+These outputs are included to complement the code and help readers quickly understand the end-to-end data transformation and modeling workflow.
 
 ## Code Sample Highlights
 
@@ -113,8 +125,11 @@ Recommended files to review:
 2. `data/sample_ledger_expenses.csv`
    Synthetic example data used for demonstration purposes.
 
-3. `outputs/data_mutation_layout.pdf`
+3. `outputs/data_mutation_layout.png`
    Conceptual diagram showing how raw text is transformed through preprocessing, tokenization, vectorization, model prediction, and human review logic.
+
+4. `outputs/data_mutation_layout.pdf`
+   PDF version of the data mutation diagram.
 
 ## Notes on Data Leakage Prevention
 
