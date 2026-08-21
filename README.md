@@ -141,7 +141,9 @@ This repository is intended as a portfolio-style project to demonstrate practica
 
 The dataset is synthetic and included only for demonstration. The project focuses on workflow clarity, baseline modeling, and transparent communication of the transformation process.
 
+---
+
 ## Author
 
-**Yu-Chun Wang**,
-Ph.D. in Statistics
+**Yu-Chun Wang**  
+Ph.D. in Statistical Science
